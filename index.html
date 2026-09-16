@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#09090b" />
   <title>Rolê — Patinadores</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#09090b;color:#fafafa;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px}.card{width:min(100%,520px);background:#18181b;border:1px solid #27272a;border-radius:28px;padding:28px;box-shadow:0 28px 80px rgba(0,0,0,.45)}.logo{width:72px;height:72px;border-radius:22px;background:#4f46e5;display:flex;align-items:center;justify-content:center;font-size:36px;margin-bottom:18px}h1{font-size:32px;margin:0 0 8px}.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:#10b98122;color:#34d399;font-size:12px;font-weight:800;margin-bottom:18px}p{color:#a1a1aa;line-height:1.55}.button{display:block;text-align:center;text-decoration:none;background:#4f46e5;color:#fff;padding:16px;border-radius:16px;font-weight:800;margin-top:24px}.small{font-size:12px;text-align:center;margin-top:12px}.muted{font-size:12px;color:#71717a;margin-top:18px}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#09090b;color:#fafafa;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px}.card{width:min(100%,520px);background:#18181b;border:1px solid #27272a;border-radius:28px;padding:28px;box-shadow:0 28px 80px rgba(0,0,0,.45)}.logo{width:72px;height:72px;border-radius:22px;background:#4f46e5;display:flex;align-items:center;justify-content:center;font-size:36px;margin-bottom:18px}h1{font-size:32px;margin:0 0 8px}.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:#10b98122;color:#34d399;font-size:12px;font-weight:800;margin-bottom:18px}p{color:#a1a1aa;line-height:1.55}.button{display:block;text-align:center;text-decoration:none;background:#4f46e5;color:#fff;padding:16px;border-radius:16px;font-weight:800;margin-top:24px}.button.disabled{opacity:.45;pointer-events:none}.small{font-size:12px;text-align:center;margin-top:12px}.muted{font-size:12px;color:#71717a;margin-top:18px}
   </style>
 </head>
 <body>
@@ -16,12 +16,20 @@
     <div class="badge">VERSÃO DE TESTES</div>
     <p>Marketplace, comunidade, eventos e o modo <strong>Tô no Rolê</strong> para a comunidade de patinadores.</p>
     <p>O aplicativo ainda está em desenvolvimento. Este endereço será usado para distribuir as versões de teste e as atualizações.</p>
-    <a class="button" href="./role-latest.apk">BAIXAR PARA ANDROID</a>
+    <a id="download" class="button disabled" href="#">PREPARANDO DOWNLOAD…</a>
     <p class="small" id="version">Verificando versão mais recente…</p>
     <p class="muted">O código-fonte do aplicativo não é publicado aqui. Este repositório contém somente arquivos de distribuição.</p>
   </main>
   <script>
-    fetch('./latest.json?t='+Date.now()).then(r=>r.json()).then(v=>{document.getElementById('version').textContent='Versão '+v.version+' • APK assinado';}).catch(()=>{document.getElementById('version').textContent='Versão de testes';});
+    fetch('./latest.json?t='+Date.now()).then(r=>r.json()).then(v=>{
+      document.getElementById('version').textContent='Versão '+v.version+' • APK assinado';
+      if(v.apkUrl && /^https:\/\//.test(v.apkUrl)){
+        const a=document.getElementById('download');
+        a.href=v.apkUrl;
+        a.textContent='BAIXAR PARA ANDROID';
+        a.classList.remove('disabled');
+      }
+    }).catch(()=>{document.getElementById('version').textContent='Versão de testes';});
   </script>
 </body>
 </html>
