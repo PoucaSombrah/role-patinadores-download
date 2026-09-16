@@ -1,0 +1,11 @@
+{
+  "version": "0.1.39",
+  "versionCode": 39,
+  "apkUrl": "https://raw.githubusercontent.com/PoucaSombrah/role-patinadores-download/main/role-latest.apk",
+  "notes": [
+    "Versão de testes do Rolê",
+    "Distribuição pública separada do código-fonte privado"
+  ],
+  "mandatory": false,
+  "publishedAt": "2026-09-16"
+}
