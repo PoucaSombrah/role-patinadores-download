@@ -1,30 +1,31 @@
 {
-  "version": "0.1.111",
-  "versionCode": 111,
-  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.111/role-v0.1.111.apk",
-  "sha256": "d2bc295634d6f6366e35e55a8efa15d36e2f3cc8d777aa3290ed4e8f8c823962",
+  "version": "0.1.112",
+  "versionCode": 112,
+  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.112/role-v0.1.112.apk",
+  "sha256": "1531df5efcc8523aad93f296f990c77f6e5b0a69e078be79e6e546a1a5c13e32",
   "notes": [
-    "Tempo e atualização da localização corrigidos",
-    "Envio de mensagens e acesso ao perfil do contato corrigidos",
-    "Avaliação do nível bloqueada após o cadastro inicial",
-    "Nova apresentação das atualizações do Rolê"
+    "Acesso administrativo dentro do perfil e das áreas corretas",
+    "Exclusão de eventos corrigida para criador e moderação",
+    "Busca manual de usuários com filtros de cidade e estado",
+    "Quilômetros, horas e XP ligados ao GPS do Tô no Rolê",
+    "Notificação de curtida com o @usuário"
   ],
   "changes": [
     {
-      "title": "Localização sem reiniciar o relógio",
-      "description": "A tela Tô no Rolê agora mostra o horário real da última localização enviada. Entrar novamente na tela ou no aplicativo não redefine o contador nem força uma nova atualização."
+      "title": "Administração em cada área",
+      "description": "O acesso administrativo aparece no próprio perfil. Eventos, perfis de usuários e chat privado exibem os controles correspondentes somente para quem possui permissão."
     },
     {
-      "title": "Chat privado corrigido",
-      "description": "As mensagens enviadas passam a aparecer imediatamente na conversa, e o botão de perfil abre o outro participante em vez do seu próprio perfil."
+      "title": "Usuários e permissões",
+      "description": "A lista administrativa permite busca manual por nome, @usuário ou ID, filtros por cidade e estado, abertura do perfil, chat privado e concessão de cargos."
     },
     {
-      "title": "Nível somente no cadastro inicial",
-      "description": "A opção de refazer a avaliação foi removida das configurações. Após a primeira avaliação, o usuário não consegue alterar o próprio nível."
+      "title": "Evolução real pelo GPS",
+      "description": "Quilômetros, horas e XP agora são calculados apenas com o Tô no Rolê ativo e localização válida. Amostras imprecisas e velocidades impossíveis são descartadas."
     },
     {
-      "title": "Atualizações mais transparentes",
-      "description": "Antes de instalar, o Rolê mostra um resumo da nova versão. Depois da atualização, exibe uma única vez esta tela com seções recolhíveis e a descrição real do que mudou."
+      "title": "Eventos e notificações",
+      "description": "A exclusão de eventos foi corrigida para o criador e para a equipe autorizada. Curtidas no feed passam a notificar o autor mostrando quem curtiu."
     }
   ],
   "mandatory": false,
