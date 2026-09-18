@@ -1,8 +1,8 @@
 {
-  "version": "0.1.102",
-  "versionCode": 102,
-  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.102/role-v0.1.102.apk",
-  "sha256": "759cf880267cf9461d9ce04deb18f8330212cda1d53c251d3bc6c91c56ce7d35",
+  "version": "0.1.103",
+  "versionCode": 103,
+  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.103/role-v0.1.103.apk",
+  "sha256": "f112b8c25b6962b5bfd14a34853683979e7578f0621af9740389d91158d1bad2",
   "notes": [
     "Rolê Beta: dados reais de testes, sem perfis ou conteúdo fictício",
     "Localização somente quando ativada pelo usuário",
