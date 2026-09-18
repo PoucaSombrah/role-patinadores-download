@@ -1,12 +1,31 @@
 {
-  "version": "0.1.109",
-  "versionCode": 109,
-  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.109/role-v0.1.109.apk",
-  "sha256": "5fd1d153e2fcae5e95c28edeef06d594d9f354ab6514c3cee5a611bdc4c7a7f0",
+  "version": "0.1.110",
+  "versionCode": 110,
+  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.110/role-v0.1.110.apk",
+  "sha256": "b88529eaff75df5d648294133e9b29a5a0db1c55d9195fabb1a99e3bb3d5df0c",
   "notes": [
-    "Rolê Beta: dados reais de testes, sem perfis ou conteúdo fictício",
-    "Localização somente quando ativada pelo usuário",
-    "Correções e melhorias da versão beta"
+    "Tempo e atualização da localização corrigidos",
+    "Envio de mensagens e acesso ao perfil do contato corrigidos",
+    "Avaliação do nível bloqueada após o cadastro inicial",
+    "Nova apresentação das atualizações do Rolê"
+  ],
+  "changes": [
+    {
+      "title": "Localização sem reiniciar o relógio",
+      "description": "A tela Tô no Rolê agora mostra o horário real da última localização enviada. Entrar novamente na tela ou no aplicativo não redefine o contador nem força uma nova atualização."
+    },
+    {
+      "title": "Chat privado corrigido",
+      "description": "As mensagens enviadas passam a aparecer imediatamente na conversa, e o botão de perfil abre o outro participante em vez do seu próprio perfil."
+    },
+    {
+      "title": "Nível somente no cadastro inicial",
+      "description": "A opção de refazer a avaliação foi removida das configurações. Após a primeira avaliação, o usuário não consegue alterar o próprio nível."
+    },
+    {
+      "title": "Atualizações mais transparentes",
+      "description": "Antes de instalar, o Rolê mostra um resumo da nova versão. Depois da atualização, exibe uma única vez esta tela com seções recolhíveis e a descrição real do que mudou."
+    }
   ],
   "mandatory": false,
   "publishedAt": "2026-09-18"
