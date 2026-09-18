@@ -1,31 +1,30 @@
 {
-  "version": "0.1.112",
-  "versionCode": 112,
-  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.112/role-v0.1.112.apk",
-  "sha256": "1531df5efcc8523aad93f296f990c77f6e5b0a69e078be79e6e546a1a5c13e32",
+  "version": "0.1.113",
+  "versionCode": 113,
+  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.113/role-v0.1.113.apk",
+  "sha256": "fec55303c2626d7562c7517c8b19a7730474b667aac42cc1fd05d2f1e74c2e9a",
   "notes": [
-    "Acesso administrativo dentro do perfil e das áreas corretas",
-    "Exclusão de eventos corrigida para criador e moderação",
-    "Busca manual de usuários com filtros de cidade e estado",
-    "Quilômetros, horas e XP ligados ao GPS do Tô no Rolê",
-    "Notificação de curtida com o @usuário"
+    "Correção ao salvar alterações do cadastro",
+    "Foto de perfil e capa podem ser atualizadas normalmente",
+    "GPS não é mais exigido novamente em perfis já cadastrados",
+    "Campos permanentes não interferem mais na edição do perfil"
   ],
   "changes": [
     {
-      "title": "Administração em cada área",
-      "description": "O acesso administrativo aparece no próprio perfil. Eventos, perfis de usuários e chat privado exibem os controles correspondentes somente para quem possui permissão."
+      "title": "Salvamento do cadastro corrigido",
+      "description": "A atualização foi separada por etapas e agora confirma se o perfil público e os dados privados realmente foram gravados no servidor."
     },
     {
-      "title": "Usuários e permissões",
-      "description": "A lista administrativa permite busca manual por nome, @usuário ou ID, filtros por cidade e estado, abertura do perfil, chat privado e concessão de cargos."
+      "title": "Foto de perfil e capa",
+      "description": "Depois do envio da imagem, o aplicativo salva corretamente o novo endereço no perfil e mostra uma mensagem compreensível caso alguma etapa falhe."
     },
     {
-      "title": "Evolução real pelo GPS",
-      "description": "Quilômetros, horas e XP agora são calculados apenas com o Tô no Rolê ativo e localização válida. Amostras imprecisas e velocidades impossíveis são descartadas."
+      "title": "GPS somente quando necessário",
+      "description": "Quem já possui cidade e estado cadastrados não precisa confirmar a localização novamente apenas para trocar foto, capa ou outros dados."
     },
     {
-      "title": "Eventos e notificações",
-      "description": "A exclusão de eventos foi corrigida para o criador e para a equipe autorizada. Curtidas no feed passam a notificar o autor mostrando quem curtiu."
+      "title": "Campos permanentes protegidos",
+      "description": "A edição comum não reenvia mais o @usuário nem o nível de patinação, evitando que as proteções desses campos bloqueiem o restante do cadastro."
     }
   ],
   "mandatory": false,
