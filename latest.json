@@ -1,13 +1,13 @@
 {
-  "version": "0.1.113",
-  "versionCode": 113,
-  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.113/role-v0.1.113.apk",
-  "sha256": "fec55303c2626d7562c7517c8b19a7730474b667aac42cc1fd05d2f1e74c2e9a",
+  "version": "0.1.114",
+  "versionCode": 114,
+  "apkUrl": "https://github.com/PoucaSombrah/role-patinadores-download/releases/download/v0.1.114/role-v0.1.114.apk",
+  "sha256": "88f29b4328738869588c85d9b7d4a559ee9caa50faa022b8e5a135a5b5cce7d2",
   "notes": [
     "Correção ao salvar alterações do cadastro",
     "Foto de perfil e capa podem ser atualizadas normalmente",
     "GPS não é mais exigido novamente em perfis já cadastrados",
-    "Campos permanentes não interferem mais na edição do perfil"
+    "Atalho Ficar Online do perfil agora ativa o Tô no Rolê"
   ],
   "changes": [
     {
@@ -23,8 +23,8 @@
       "description": "Quem já possui cidade e estado cadastrados não precisa confirmar a localização novamente apenas para trocar foto, capa ou outros dados."
     },
     {
-      "title": "Campos permanentes protegidos",
-      "description": "A edição comum não reenvia mais o @usuário nem o nível de patinação, evitando que as proteções desses campos bloqueiem o restante do cadastro."
+      "title": "Atalho Ficar Online funcionando",
+      "description": "O botão do perfil agora executa a ativação do Tô no Rolê, solicita o GPS quando necessário e mostra o andamento enquanto conclui."
     }
   ],
   "mandatory": false,
